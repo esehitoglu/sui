@@ -6,6 +6,8 @@ module hello_world::messenger_test {
     // Importing necessary modules and structs from the `sui` and `hello_world::messenger` namespaces.
     use sui::test_scenario;
     use hello_world::messenger::{Self, Messenger, Admin};
+    use sui::tx_context::{Self, TxContext};
+    use sui::transfer;
 
     // A test function to verify the creation of a new messenger.
     // This is where the actual test scenario is defined and executed.
